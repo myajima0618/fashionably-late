@@ -1,0 +1,220 @@
+.search-form__inner {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form__item {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search-form__item input,
+.search-form__item select {
+    padding: 10px 5px;
+    border: 1px solid #E3DED9;
+    font-size: 14px;
+}
+
+
+.form-item__input-keyword {
+    width: 40%;
+    background: #FBFBFB;
+    color: #BEB1A6;
+}
+
+.form-item__select-gender,
+.form-item__select-category,
+.form-item__input-date {
+    background: #F4F4F4;
+    color: #8B7969;
+}
+
+.search__button {
+    width: 10%;
+    color: #fff;
+}
+
+.search__button button {
+    padding: 10px;
+    width: 100%;
+    background: #82756A;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #8B7969;
+}
+
+.reset__button button {
+    padding: 10px 20px;
+    width: 100%;
+    background: #D9C6B5;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #D9C6B5;
+}
+
+.page__inner {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.export__button {
+    margin: 0;
+}
+
+.export__button button {
+    margin: 0;
+    padding: 8px 20px;
+    background: #E1DBD699;
+    font-size: 16px;
+    border: none;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-item {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #E0DFDE;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: top;
+    color: #8B7969;
+}
+
+.page-item .page-link {
+    color: #8B7969;
+}
+
+.page-item.active {
+    margin: 0;
+    background: #8B7969;
+}
+
+.page-item.active .page-link {
+    width: 25px;
+    height: 25px;
+    display: block;
+    color: #fff;
+}
+
+svg.w-5.h-5 {
+    /*paginateメソッドの矢印の大きさ調整のために追加*/
+    width: 30px;
+    height: 30px;
+}
+
+.contact-table {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.contact-table__inner {
+    width: 100%;
+    border: 1px solid #E0DFDE;
+}
+
+.contact-table__row {
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.contact-table__header {
+    padding: 10px 30px;
+    background: #8B7969;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact-table__content {
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.detail__button {
+    padding: 8px 20px;
+    background: #F4F4F44D;
+    font-size: 18px;
+    color: #D9C6B5;
+    border: 1px solid #D9C6B599;
+}
+
+/*---------------------------------
+/*  モーダルウィンドウ
+/*--------------------------------*/
+body.fixed {
+    /* iOSは16以降でモーダル表示中に背景より後ろをスクロールさせない */
+    overflow: hidden;
+}
+
+dialog:modal {
+    width: 600px;
+    height: 650px;
+    border: 1px solid #8B7969;
+    background: #fff;
+    box-shadow: 4px 4px 4px 0px rgba(139, 121, 105, 0.25);
+}
+
+dialog::backdrop {
+    /* 背景となる部分のカスタマイズ */
+    background: #fff;
+    opacity: .4;
+}
+
+.close__button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modal-close {
+    margin-top: 5px;
+    width: 36px;
+    height: 36px;
+    font-size: 28px;
+    line-height: 5px;
+    display: block;
+    border-radius: 100%;
+    border: 1px solid #8B7969;
+    background: #fff;
+    color: #8B7969;
+}
+
+.detail-table {
+    margin: 30px auto 10px;
+    color: #8B7969;
+    width: 90%;
+}
+
+.detail-table__header {
+    padding: 10px;
+    width: 35%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.delete__button {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+}
+
+.delete__button button {
+    padding: 8px 20px;
+    background: #BA370D;
+    color: #fff;
+    border: none;
+}

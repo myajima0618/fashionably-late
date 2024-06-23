@@ -1,0 +1,169 @@
+::placeholder,
+select {
+    color: #BEB1A6;
+}
+
+.form-item {
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 16px;
+    display: flex;
+}
+
+.form-item__title {
+    width: 30%;
+}
+
+.form-item__title--required {
+    color: #FF9494;
+}
+
+.form-item__input {
+    width: 70%;
+}
+
+.form-item__input input,
+.form-item__input select,
+.form-item__input textarea {
+    padding: 5px 20px;
+    width: 100%;
+    background: #F4F4F4;
+    border: none;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.form-item__input label {
+    color: #8B7969;
+}
+
+.form-item__input--name,
+.form-item__input--gender,
+.form-item__input--email,
+.form-item__input--address,
+.form-item__input--building,
+.form-item__input--tel,
+.form-item__input--detail {
+    width: 100%;
+}
+
+.form-item__input--name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-item__input--name input {
+    width: 48%;
+}
+
+.form-item__input--gender label {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+/* radioボタンのデフォルトデザインを無効化 */
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+}
+
+/* ラジオボタン装飾 */
+input[type=radio] {
+    margin: 0 2px;
+    padding: 0;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border: 1px solid #8B7969;
+    border-radius: 50%;
+    vertical-align: -2px;   /* ラジオボタンの位置微調整 */
+}
+
+input[type="radio"]:checked:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #8B7969;
+    content: '';
+}
+
+.form-item__input--tel-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-item__input--tel input {
+    width: 30%;
+    margin-right: 9px;
+    margin-left: 9px;
+    display: inline-block;
+}
+
+.form-item__input--tel input:first-child {
+    margin-left: 0;
+}
+
+.form-item__input--tel input:last-child {
+    margin-right: 0;
+}
+
+.form-item__input--category {
+    width: 50%;
+}
+
+.form-item__input--detail {
+    height: 160px;
+}
+
+.form-item__input--detail textarea {
+    height: 80%;
+}
+
+.form-item__error {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    color: #f00;
+}
+
+.form-item__error--name {
+    width: 50%;
+}
+.form-item__error--name:nth-child(2) {
+    padding-left: 10px;
+}
+
+.form-item__error--tel {
+    width: 33%;
+    text-align: left;
+}
+
+.form-item__error--tel:nth-child(1) {
+    margin-right: 30px;
+}
+
+.form-item__error--tel:nth-child(2) {
+    margin-right: 25px;
+}
+
+.form__button {
+    margin: 0 auto;
+    width: 160px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 7px 35px;
+    border: none;
+    background: #82756A;
+    color: #fff;
+}
+
